@@ -1,0 +1,142 @@
+/* Fixa koden sumbitnews
+Då Den finns i style.css med */
+/* Grundläggande stil */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0d0b0bd5;
+    color: #f4eaea;
+}
+
+/* =========== HEADER =========== */
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: #db2121d0;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.version {
+    font-size: 14px;
+    color: #f6eded;
+    position: relative;
+    top: 1px;
+}
+
+.home-link {
+    text-decoration: none;
+    color: inherit;
+    display: inline-flex;
+    align-items: center;
+}
+
+.home-link:hover {
+    text-decoration: underline;
+}
+
+/* Navigationslänkar */
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 20px;
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+}
+
+/* Submit-knapp i navigeringen */
+.submit-button {
+    background-color: #ff9800;
+    border: none;
+    padding: 8px 15px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: auto;
+}
+
+.submit-button:hover {
+    background-color: #e68900;
+}
+
+/* Innehållsstyling */
+.content {
+    margin: 50px auto;
+    max-width: 500px;
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Formulär för att skicka in nyhet */
+#newsForm {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#newsForm label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#newsForm input, #newsForm textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+}
+
+#newsForm button {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#newsForm button:hover {
+    background-color: #e68900;
+}
+
+/* Footer */
+.footer {
+    position: relative;
+    background-color: #db2121d0;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;
+}

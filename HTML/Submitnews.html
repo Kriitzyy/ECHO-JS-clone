@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit News</title>
+    <link rel="stylesheet" href="../CSS/Submit-news.css"> <!-- Använd samma CSS -->
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1><a href="index.html" class="home-link">Echo JS</a></h1>
+                <small class="version">1.0</small>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" data-news-type="top">Top</a></li> 
+                <li><a href="index.html" data-news-type="latest">Latest</a></li>
+                <li><a href="index.html" data-news-type="random">Random</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <a href="SubmitNews.html" class="submit-button">Send in news!</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h2>Submit Your News</h2>
+        <form id="newsForm">
+            <label for="newsTitle">Title:</label>
+            <input type="text" id="newsTitle" required>
+
+            <label for="newsComment">Description:</label>
+            <textarea id="newsComment" rows="4" required></textarea>
+
+            <button type="submit">Submit News</button>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Echo JS</p>
+    </footer>
+    <!-- Gör något med Javascript koden, exempelvis i en seperat JS Sumbitnews.js fil med JS koden -->
+
+    <script src="../js/submit.js"></script>
+
+</body>
+</html>

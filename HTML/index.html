@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echo JS - Nyheter</title>
+    <link rel="stylesheet" href="../CSS/Style.css"> <!-- Huvud-CSS -->
+</head>
+<body>
+
+    <header> 
+        <nav class="navbar">
+            <div class="logo">
+                <h1><a href="index.html" class="home-link">Echo JS</a></h1>
+                <small class="version">1.0</small>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" data-news-type="top">Top</a></li> 
+                <li><a href="#" data-news-type="latest">Latest</a></li>
+                <li><a href="#" data-news-type="random">Random</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <a href="SubmitNews.html" class="submit-button">Send in news!</a>
+        </nav>
+    </header>
+
+    <main class="content">
+        <h2 id="newsheader">Latest news</h2>
+        <div id="newsList"></div> <!-- Här listas nyheterna dynamiskt -->
+
+        <!-- Formulär för att skicka in nyhet -->
+        <form id="newsForm">
+            <fieldset>
+                <legend>Submit news</legend>
+                <label for="newsTitle">Title:</label>
+                <input type="text" id="newsTitle" placeholder="Enter title..." required>
+
+                <label for="newsComment">Comment:</label>
+                <input type="text" id="newsComment" placeholder="Enter comment (max 60 chars)..." maxlength="60" required>
+
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <script src="../js/script.js"></script> <!-- JavaScript för funktionalitet -->
+
+    <footer class="footer">
+        <p>&copy; 2025 Echo JS 1.0</p>
+    </footer>
+
+</body>
+</html>
