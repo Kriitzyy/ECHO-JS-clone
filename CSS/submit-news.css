@@ -1,11 +1,12 @@
 /* Fixa koden sumbitnews
 Då Den finns i style.css med */
 /* Grundläggande stil */
-body {
+html, body {
+    min-height: 100vh; /* Minst hela skärmens höjd */
+    display: flex;
+    flex-direction: column;
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #0d0b0bd5;
-    color: #f4eaea;
+
 }
 
 /* =========== HEADER =========== */
@@ -83,9 +84,7 @@ body {
 
 /* Innehållsstyling */
 .content {
-    margin: 50px auto;
-    max-width: 500px;
-    text-align: center;
+   flex: 1; 
 }
 
 .content h2 {
