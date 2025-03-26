@@ -6,7 +6,10 @@ html, body {
     display: flex;
     flex-direction: column;
     margin: 0;
-
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0d0b0bd5;
+    color: #f4eaea;
 }
 
 /* =========== HEADER =========== */
@@ -84,7 +87,12 @@ html, body {
 
 /* Innehållsstyling */
 .content {
-   flex: 1; 
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrera vertikalt */
+    align-items: center; /* Centrera horisontellt */
+    text-align: center;
 }
 
 .content h2 {
@@ -94,6 +102,8 @@ html, body {
 
 /* Formulär för att skicka in nyhet */
 #newsForm {
+    width: 100%;
+    max-width: 500px; /* Begränsa bredden */
     background-color: rgba(255, 255, 255, 0.1);
     padding: 20px;
     border-radius: 8px;
